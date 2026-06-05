@@ -162,8 +162,23 @@ The view contains:
 ![ERD](screenshots/erd_diagram.png)
 
 ---
+## Python ETL
 
-# ETL Process
+The Python layer is responsible for loading external data into the staging layer.
+
+### Components
+
+- db_connection.py – SQLAlchemy database connection.
+- load_department_budget.py – loads department budget data into stg.department_budget.
+- load_currency_rates.py – loads historical USD → ILS exchange rates into stg.currency_rates.
+
+### Security
+
+Database credentials are not stored in source code.
+Environment variables are managed through a local .env file.
+An .env.example template is provided for reference.
+
+## ETL Process
 
 ## Department Budget Integration
 
