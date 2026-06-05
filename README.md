@@ -178,7 +178,7 @@ Database credentials are not stored in source code.
 Environment variables are managed through a local .env file.
 An .env.example template is provided for reference.
 
-№# ETL Process
+## ETL Process
 
 ## Department Budget Integration
 
